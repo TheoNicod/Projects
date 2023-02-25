@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+        
+
+/*************************************************************************
+ ***                    Début de la feuille de style                   ***
+ *************************************************************************/ 
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+        
+#map {
+    width: 100vw;
+    height: 100vh;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+#btnPlus {
+    position: absolute; 
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    border: solid 4px green;
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#btnPlus:before {
+    content: '\1F6B2';
+    padding: 10px;
+}
+#btnPlus:after {
+    position: absolute;
+    font-size: 30px;
+    content: '+';
+    top: -10px;
+    right: 0;
+}
+ 
+        
+/************************************************************
+ *                    Fenêtre popup
+ ************************************************************/
+
+#popup, #form {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    border: solid 0px #000;
+    border-radius: 10px;
+    background-color: #FFF;
+    padding: 10px 5px;
+    box-shadow: 10px 10px 10px #454545;
+}
+body.popup #popup {
+    display: block;
+}
+
+/** Titre dans les fenêtres popup/form **/
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+/** Boutons dans la popup/form **/
+button.btnClose {
+    color: black;
+    cursor: pointer;
+    width: auto;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-size: 26px; 
+}
+button.btnClose:before {
+    content: '\2716';
+}
+
+#popup p {
+    position: relative;
+    margin: 0;
+    padding: 10px 0 4px 5px;
+}
+#popup p:not(:last-of-type) {
+        border-bottom: solid 1px #000; 
+}   
+
+/** Boutons visibles uniquement au survol **/
+#popup p > button {
+    display: none;   
+}
+#popup p:hover > button {
+    display: block;   
+}
+#popup p:hover {
+    background-color: #F0F0F0;
+} 
+p span {
+    font-size: 80%;  
+}
+p:empty:before {
+    content: 'Emplacement vide';
+    font-style: italic;
+}
+
+/** Suppression d'un vélo **/
+button.btnSupprimer {
+    float: right;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/************************************************************
+ *                    Fenêtre du formulaire
+ ************************************************************/
+
+#form {
+    display: none;
+    position: absolute;
+
+}
+body.form #form {
+    display: block;
+}
+
+#form table td {
+    padding: 5px 10px;
+}
+#form table label {
+    padding: 0 10px;
+}
+#form table td:first-child {
+    text-align: right;
+}
+#form table td:only-child {
+    text-align: left;
+}
+
+#form #btnAjouter {
+    
+    font-size: 14px;
+
+}
+

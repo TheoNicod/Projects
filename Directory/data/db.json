@@ -1,0 +1,52 @@
+{
+  "contact": [
+    {
+      "id": 1,
+      "name": "Jean",
+      "desc": "La description de Jean",
+      "type": "entreprise",
+      "position": {
+        "lat": 47,
+        "long": 6.2
+      }
+    },
+    {
+      "id": 2,
+      "name": "Marc",
+      "desc": "La description de Marc",
+      "type": "particulier",
+      "position": {
+        "lat": 47.5,
+        "long": 6.01
+      }
+    },
+    {
+      "id": 3,
+      "name": "Anne",
+      "desc": "La description de Anne",
+      "type": "collectivité",
+      "position": {
+        "lat": 47.24,
+        "long": 6.53
+      }
+    },
+    {
+      "name": "pl",
+      "desc": "ok",
+      "type": "Entreprise",
+      "id": 4
+    },
+    {
+      "name": "ok",
+      "desc": "ok\n",
+      "type": "Entreprise",
+      "id": 5
+    },
+    {
+      "name": "aaaa",
+      "desc": "aaaaaa",
+      "type": "Entreprise",
+      "id": 6
+    }
+  ]
+}
