@@ -1,12 +1,8 @@
 ## How to run this project 
 
-### Clone the repository
-
-    $ git clone https://github.com/TheoNicod/test-technique.git
-
 ### Install dependencies
 
-    $ cd test-technique
+    $ cd /Directory
     $ npm install
 
 ### Start the JSON server
